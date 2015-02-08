@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GameInterface.Domain
+namespace GameInterface.Domain.Enum
 {
-    public class Class1
+    public enum AppType
     {
+        保存, 上架, 停用, 删除
     }
 }
