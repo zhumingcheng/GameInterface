@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{D592FB0F-2450-4547-AEE0-154200505B78}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{89C279D8-07D5-4FE2-ACAA-94D6A863727D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Resource", "Resource", "{E405F6CC-B50B-46CB-9973-B4BDC5E1FB18}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebAPI", "WebAPI", "{C4946B01-F0F1-46FF-B363-47F7ABDB8EC1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{A7D55A88-3FF4-4CB4-8F8F-51290F79E8B4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "文档", "文档", "{910D13D8-A671-4822-9CC5-95CFC56A725C}"
+	ProjectSection(SolutionItems) = preProject
+		数据库更新命令.txt = 数据库更新命令.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{910D13D8-A671-4822-9CC5-95CFC56A725C} = {E405F6CC-B50B-46CB-9973-B4BDC5E1FB18}
+	EndGlobalSection
+EndGlobal
