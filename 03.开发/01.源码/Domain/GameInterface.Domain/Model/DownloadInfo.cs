@@ -8,7 +8,7 @@ namespace GameInterface.Domain.Model
 {
     public class DownloadInfo
     {
-        public Guid ID{get;set{this.ID=Guid.NewGuid();}}
+        public Guid ID { get; set; }
 
         /// <summary>
         /// 手机的Mac地址

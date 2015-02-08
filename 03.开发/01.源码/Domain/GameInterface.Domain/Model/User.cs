@@ -11,7 +11,7 @@ namespace GameInterface.Domain.Model
         /// <summary>
         /// 用户唯一标识
         /// </summary>
-        public Guid ID { get; set { this.ID = Guid.NewGuid(); } }
+        public Guid ID { get; set; }
 
         /// <summary>
         /// 用户登录名
