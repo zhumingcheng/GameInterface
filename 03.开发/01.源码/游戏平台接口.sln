@@ -13,14 +13,50 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{A7D55A88-3
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "文档", "文档", "{910D13D8-A671-4822-9CC5-95CFC56A725C}"
 	ProjectSection(SolutionItems) = preProject
-		数据库更新命令.txt = 数据库更新命令.txt
+		Resource\文档\数据库更新命令.txt = Resource\文档\数据库更新命令.txt
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameInterface.Domain", "Domain\GameInterface.Domain\GameInterface.Domain.csproj", "{72D3ED02-E4A6-440F-B751-E3202BDB37D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameInterface.Domain.Repositories", "Domain\GameInterface.Domain.Repositories\GameInterface.Domain.Repositories.csproj", "{894886E4-FF0D-45CF-9968-CAD9BE38E746}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{5E058708-C86B-4EBE-9C77-40185A0462E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameInterface.Core", "Core\GameInterface.Core\GameInterface.Core.csproj", "{FC0A219E-BA58-4156-B6F4-F181D1F09CCD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameInterface.WebAPI", "WebAPI\GameInterface.WebAPI\GameInterface.WebAPI.csproj", "{B5FC1E2F-0C97-4023-9BC7-769A8EA09ECB}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{72D3ED02-E4A6-440F-B751-E3202BDB37D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72D3ED02-E4A6-440F-B751-E3202BDB37D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72D3ED02-E4A6-440F-B751-E3202BDB37D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72D3ED02-E4A6-440F-B751-E3202BDB37D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{894886E4-FF0D-45CF-9968-CAD9BE38E746}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{894886E4-FF0D-45CF-9968-CAD9BE38E746}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{894886E4-FF0D-45CF-9968-CAD9BE38E746}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{894886E4-FF0D-45CF-9968-CAD9BE38E746}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC0A219E-BA58-4156-B6F4-F181D1F09CCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC0A219E-BA58-4156-B6F4-F181D1F09CCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC0A219E-BA58-4156-B6F4-F181D1F09CCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC0A219E-BA58-4156-B6F4-F181D1F09CCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5FC1E2F-0C97-4023-9BC7-769A8EA09ECB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5FC1E2F-0C97-4023-9BC7-769A8EA09ECB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5FC1E2F-0C97-4023-9BC7-769A8EA09ECB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5FC1E2F-0C97-4023-9BC7-769A8EA09ECB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{72D3ED02-E4A6-440F-B751-E3202BDB37D7} = {89C279D8-07D5-4FE2-ACAA-94D6A863727D}
+		{894886E4-FF0D-45CF-9968-CAD9BE38E746} = {89C279D8-07D5-4FE2-ACAA-94D6A863727D}
 		{910D13D8-A671-4822-9CC5-95CFC56A725C} = {E405F6CC-B50B-46CB-9973-B4BDC5E1FB18}
+		{B5FC1E2F-0C97-4023-9BC7-769A8EA09ECB} = {C4946B01-F0F1-46FF-B363-47F7ABDB8EC1}
+		{FC0A219E-BA58-4156-B6F4-F181D1F09CCD} = {5E058708-C86B-4EBE-9C77-40185A0462E2}
 	EndGlobalSection
 EndGlobal
