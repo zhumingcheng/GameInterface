@@ -1,0 +1,187 @@
+﻿
+
+input, table, select, textarea, .radius {
+    border-radius: 4px !important;
+}
+
+    input:focus, textarea:focus {
+        outline: none !important;
+    }
+
+.searchlbl {
+    margin-right: 10px;
+    height: 24px;
+    width: 40px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 20px;
+}
+
+.EditFormDivMargin {
+    margin: 5px 2px;
+}
+
+.has-success input[type='text']:first-child, .has-success [type='password'] {
+    border-color: #3c763d;
+    box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075);
+}
+
+.has-warning intput[type='text']:first-child, .has-warning [type='password'] {
+    border-color: #8a6d3b;
+    box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075);
+}
+
+.has-error input[type='text']:first-child, .has-error [type='password'] {
+    border-color: #a94442;
+    box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075);
+}
+
+.red {
+    color: red;
+}
+
+.Calendar-icon {
+    background: url('/InstrumentShare.Web/Content/images/icon_data.png') no-repeat 195px 8px #FFF;
+}
+
+.panel {
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-bottom-style: solid;
+    border-top-style: solid;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    box-shadow: 0px 1px 1px rgba(0,0,0,0.05);
+    background-color: rgb(255,255,255);
+}
+
+.panel-default {
+    border-bottom-color: #ddd;
+    border-top-color: #ddd;
+    border-left-color: #ddd;
+    border-right-color: #ddd;
+}
+
+    .panel-default > .panel-heading {
+        color: #fff;
+        border-bottom-color: #428bca;
+        border-top-color: #428bca;
+        border-left-color: #428bca;
+        border-right-color: #428bca;
+        background-color: rgb(66,139,202);
+    }
+
+        .panel-default > .panel-heading > .panel-title {
+            color: inherit;
+            font-size: 16px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+    .panel-default > .panel-body {
+        padding-bottom: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 15px;
+    }
+
+.opacity {
+    opacity: 1 !important;
+    filter: Alpha(opacity=100) !important; /* IE8 以及更早的浏览器 */
+    /*width: 13px !important;
+        height: 13px !important;*/
+    padding: 3px !important;
+    margin: 0px !important;
+    color: #333 !important;
+    box-sizing: border-box !important;
+}
+
+
+.NumberTip {
+    /*position: absolute;*/
+    font-size: 11px !important;
+    font-weight: 300;
+    top: 8px;
+    right: 24px;
+    text-align: center;
+    height: 14px;
+    background-color: #e02222;
+    padding: 2px 6px 2px 6px;
+    -webkit-border-radius: 12px !important;
+    -moz-border-radius: 12px !important;
+    border-radius: 12px !important;
+    text-shadow: none !important;
+    color: #fff;
+    margin-right: 3px;
+    margin-left: 3px;
+}
+
+/* firefox hack for top bar badges */
+@-moz-document url-prefix() {
+    .NumberTip;
+
+{
+    padding: 1px 6px 3px 6px;
+}
+
+}
+
+
+.no_underline:hover {
+    text-decoration: none;
+}
+
+.no_underline:active {
+    text-decoration: none;
+}
+
+.no_underline:visited {
+    text-decoration: none;
+}
+
+.no_underline:link {
+    text-decoration: none;
+}
+
+div.UnEnable, div.used, div.Enable, div.Selected, div.Requesting {
+    border-radius: 10px !important;
+    height: 16px;
+    width: 16px;
+    margin: auto auto;
+    cursor: pointer;
+    border: 1px solid #666;
+}
+
+div.UnEnable {
+    background-color: red;
+}
+
+div.used {
+    background-color: gray;
+}
+
+div.Enable {
+}
+
+div.Requesting {
+    cursor: pointer;
+    background-color: lightgray;
+}
+
+div.Selected {
+    /*border: 1px solid;
+    text-align: center;
+    vertical-align: middle;*/
+    cursor: pointer;
+    background-color: rgb(34,177,76) !important;
+}
+
+div.clear {
+    clear: both;
+}

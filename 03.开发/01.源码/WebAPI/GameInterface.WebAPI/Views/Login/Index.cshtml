@@ -1,0 +1,99 @@
+﻿@model GameInterface.WebAPI.Models.VOUser
+
+@{
+    Layout = null;
+}
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>专家诊断系统登陆</title>
+    <link href="@Url.Content("~/Content/Logon/style.css")" rel="stylesheet" type="text/css" />
+
+    <link href="@Url.Content("~/favicon.ico") " type="image/x-icon" rel="icon" />
+    <link href="@Url.Content("~/favicon.ico") " type="image/x-icon" rel="shortcut icon" />
+</head>
+
+<body class="login" style="text-align:center;">
+    <div class="loginArea">
+        <div class="logo"></div>
+        <div class="loginBox">
+            @{    
+                string msg = "";
+                if (ViewBag.Message != null)
+                {
+                    msg = (string)ViewBag.Message;
+                }
+              
+                <div class="loginBoxIn" style="height: 20px">
+                    &nbsp;
+                    <label style="color: red">@msg</label>
+                </div>     
+                
+            }
+
+            @using (Html.BeginForm("SumbitLogon", "LogonForm", FormMethod.Post, new { id = "vForm", onsubmit = "return false" }))
+            {                
+                <div class="loginBoxIn">
+                    <div class="loginLineUser">
+                        <span href="#" class="loginTitle">用户名</span> @Html.TextBoxFor(model => model.UserName, new { @class = "loginInput2" })
+                    </div>
+                    <div class="loginLinePassword">
+                        <span href="#" class="loginTitle">密&nbsp;&nbsp;&nbsp;码</span>
+                        @Html.PasswordFor(model => model.Password, new { @class = "loginInput2" })
+                    </div>
+                    <div class="loginButtonArea">
+                        <div class="fl font999">
+                            @Html.CheckBoxFor(model => model.RememberMe)
+                            @Html.LabelFor(model => model.RememberMe)
+                        </div>
+                        <div class="fr">
+                            <input type="submit" value="登录" id="subBtn" class="loginButton" onclick="check();" />
+                        </div>
+                    </div>
+                    <!-- loginButtonArea -->
+                </div>
+                <!-- loginBoxIn -->
+            }
+        </div>
+        <!-- loginBox -->
+    </div>
+    <!-- loginArea -->
+</body>
+</html>
+
+<script type="text/javascript">
+
+    function check() {
+        var accInp = document.getElementById('EmployeeNo').value;
+        var psdInp = document.getElementById('Password').value;
+
+        if (psdInp && accInp) {
+
+            if (document.trim) {
+                accInp = accInp.trim();
+                psdInp = psdInp.trim();
+            }
+
+            if ("" != accInp && "" != psdInp) {
+                document.getElementById('vForm').submit();
+            } else {
+                alert('用户名密码不能为空！');
+            }
+        } else {
+            alert('用户名密码不能为空！');
+        }
+    }
+
+    function getFocus() {
+
+        if (document.getElementById) {
+            var subBtn = document.getElementById('subBtn');
+            if (document.focus) {
+                subBtn.focus();
+            }
+        }
+    }
+
+    window.onload = getFocus;
+
+</script>

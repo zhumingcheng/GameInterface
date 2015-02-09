@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GameInterface.Domain.Model
 {
-    public class AppInfo
+    public class AppInfo : AggregateRoot
     {
         public AppInfo()
         {

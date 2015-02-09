@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GameInterface.Domain.Model
 {
-    public class User
+    public class User : AggregateRoot
     {
         /// <summary>
         /// 用户唯一标识

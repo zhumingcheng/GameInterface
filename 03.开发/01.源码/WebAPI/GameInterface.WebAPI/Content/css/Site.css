@@ -1,0 +1,44 @@
+﻿.red {
+    color: red;
+}
+
+.checkboxlist {
+    float: left;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.iconHead {
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid rgb(113, 177, 209);
+}
+
+.taghead {
+    background: #90c1e6;
+    text-align: center;
+    width: 20%;
+    display: block;
+    margin-bottom: -5px;
+    height: 27px;
+    line-height: 27px;
+    color: #FFF;
+}
+
+    .taghead:hover {
+        background: rgb(113, 177, 209);
+        color: #808080;
+    }
+
+span.fixedwidth {
+    display: -moz-inline-box;
+    display: inline-block;
+}
+
+body {
+    background-color: #fafafa !important;
+}
+

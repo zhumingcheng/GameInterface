@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GameInterface.Domain.Model
 {
-    public class DownloadInfo
+    public class DownloadInfo : AggregateRoot
     {
         public Guid ID { get; set; }
 

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GameInterface.Domain.Model
 {
-    public class AppCategory
+    public class AppCategory : AggregateRoot
     {
         public AppCategory()
         {

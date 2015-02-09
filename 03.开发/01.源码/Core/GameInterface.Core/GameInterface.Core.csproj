@@ -11,6 +11,7 @@
     <AssemblyName>GameInterface.Core</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -20,6 +21,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -28,8 +30,12 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\..\packages\EntityFramework.6.1.2\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -40,6 +46,25 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\GameInterface.Common\GameInterface.Common.csproj">
+      <Project>{c7cbef06-77ae-4772-8bb8-141e84d90b5d}</Project>
+      <Name>GameInterface.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Domain\GameInterface.Domain.Repositories\GameInterface.Domain.Repositories.csproj">
+      <Project>{894886e4-ff0d-45cf-9968-cad9be38e746}</Project>
+      <Name>GameInterface.Domain.Repositories</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Domain\GameInterface.Domain\GameInterface.Domain.csproj">
+      <Project>{72d3ed02-e4a6-440f-b751-e3202bdb37d7}</Project>
+      <Name>GameInterface.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GameInterface.JsonModel\GameInterface.JsonModel.csproj">
+      <Project>{a3d8c0a2-9939-4de0-9105-cbc3a2fe051a}</Project>
+      <Name>GameInterface.JsonModel</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

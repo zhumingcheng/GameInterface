@@ -1,0 +1,90 @@
+﻿.IndexTitle {
+    font-size: 20px;
+}
+
+#pathsys_navs {
+    float:right;
+}
+
+.pathsys-nav {
+    float:right;
+    background:#90c1e6;
+    padding:7px;
+    margin-right:7px;
+    font-weight:bold;
+    color:white;
+    cursor:pointer;
+    width:120px;
+    text-align:center;
+}
+
+.pathsys-nav a{
+    color:white;
+}
+
+.query {
+    margin-bottom: 20px;
+}
+
+.link {
+    margin: 0 0 0 10px;
+    font-size: 20px;
+}
+
+.consulationBill {
+    margin-left: 10px;
+}
+
+#tabstrip {
+    /*font-size:16px;*/
+}
+
+.footer {
+    text-align: center;
+    bottom: 20px;
+}
+
+.buttonInquiry {
+    border: 1px solid #95B4E2;
+    background: #f0efef left 0;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 0 0px;
+    font-size:16px;
+}
+
+.bluebg
+{
+    background-color: #f3f8f7;
+    font-weight: bold;
+    padding-right: 5px;
+    color: #333;
+    text-align: right;
+    font-size:14px;
+}
+.writebg
+{
+    background-color: #fff;
+    padding-left: 5px;
+    font-weight: 400;
+    font-size:14px;
+}
+
+span.notice, span.approved, span.note
+{
+    font-size: 14px;
+    display: block;
+    padding: 11px 10px 11px 36px;
+    margin: 0px 0px;
+    width: 120px;
+    float: right;
+}
+
+span.approved {
+    color: #666;
+    font-weight: bold;
+    border: 1px solid #a8a8a8;
+    background: #ccc url('images/approved.png') no-repeat 10px 50%;
+}

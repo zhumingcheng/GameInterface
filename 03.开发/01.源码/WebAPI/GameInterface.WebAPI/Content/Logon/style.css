@@ -1,0 +1,95 @@
+﻿@charset "UTF-8";
+/* CSS Document */
+
+body{ 
+    font-size:12px;
+	font-family:'微软雅黑', "宋体";
+	line-height:180%; 
+	color:#333333; 
+	width:100%;
+	background-repeat:repeat-x;
+	text-align:left;
+	background:url(../images/middle_bg.jpg);
+	}
+	
+body,img,form,ul,li,dl,input,fieldset,.clear,dt,dd,dl{
+	margin:0px; 
+	padding:0px; 
+	border:0px;
+	}
+
+select{ padding:2px;}
+
+input { outline:none;}
+	
+ul,dl{
+	list-style-type: none;
+}
+
+h1,h2,h3,h4{ font-weight:normal; margin:0px; padding:0px;}
+
+.clear{
+	font-size: 0px;
+	line-height:0px;
+	clear: both;
+	height:0px;
+}
+
+.fl{ float:left; display:inline;}
+
+.fr{ float:right; display:inline;}
+.fn{ float:none;}
+
+.img_bor{ border:1px #d6d6d6 solid; padding:1px;}
+
+a{ color:#3fa9e0;}
+
+a:link,a:visited{ text-decoration:none;}
+
+a:hover{ color:#f00; text-decoration:none;}
+
+.font18{ font-size:18px;}
+.font14{ font-size:14px;}
+.font24{ font-size:24px;}
+.fontRed{ color:#F00; text-shadow:0 1px 0 #FFF;}
+.fontDeepRed{ color:#bb463a; text-shadow:0 1px 0 #FFF;}
+.font999{ color:#999; text-shadow:0 1px 0 #FFF;}
+.font666{ color:#666; text-shadow:0 1px 0 #FFF;}
+.font333{ color:#333; text-shadow:0 1px 0 #FFF;}
+.fontBlack{ color:#000; text-shadow:0 1px 0 #FFF;}
+.fontWhite{ color:#FFF; text-shadow:0 -1px 0 #000;}
+.fontOrange{ color:#fe3800}
+.fontGreen{ color:#54b856}
+.fontOrange2{ color:#f29e00;}
+.fontBlue{ color:#5896bf;}
+.mr10{ margin-right:10px;}
+.ml10{ margin-left:10px;}
+.mt5{ margin-top:5px;}
+.mb10{ margin-bottom:10px;}
+.container{ min-width:990px;}
+.container{ min-width:1002px;}
+
+/* 公共样式 */
+
+/* 登录 */
+
+.login{ background:url(../images/bg.jpg);}
+.loginArea{ width:416px; margin:80px auto 0 auto;}
+.loginArea .logo{ background:url(../images/loginLogo.png); width:198px; height:132px; margin:0 auto 15px auto;}
+.loginArea .logo_path{ background:url(../images/loginLogo_path.png); width:229px; height:141px; margin:0 auto 15px auto;}
+.loginBox{ width:416px; height:240px; background:url(../images/loginBg.png); float:left; padding-top:61px;}
+.loginBoxIn{ padding-left:55px;}
+.loginLine, .loginLine2{  background:url(../images/loginInput1.png) no-repeat center; width:302px; height:32px; margin-bottom:10px; margin-top:10px}
+.loginLineUser{  background:url(../images/loginInput1.png) no-repeat center; width:302px; height:32px; margin-bottom:20px; margin-top:0px}
+.loginLinePassword{  background:url(../images/loginInput1.png) no-repeat center; width:302px; height:32px; margin-bottom:10px; margin-top:30px}
+.loginLine2{ background:none;}
+.loginInput1{ width:302px; background-color:transparent; font-size:12px; color:#999; line-height:32px; height:32px; float:left; text-indent:10px;}
+.loginInput2{ width:227px; background-color:transparent; font-size:12px; color:#999; line-height:32px; height:32px; text-indent:10px; float:left;}
+.loginInput3{ background:url(../images/loginInput2.png); width:222px; height:32px; line-height:32px;  color:#999; text-indent:10px; float:left;}
+.forgot{ background-image:url(../images/forgot.png); width:75px; height:32px; float:left; line-height:32px; color:#999; text-indent:20px;}
+.forgot:hover{ background-position:-75px 0; color:#666;}
+.yzm{ background:url(../images/yzmBg.png); width:76px; height:32px; float:left; margin-left:4px;}
+.loginButtonArea{ padding:60px 0 0 0; width:302px;}
+.loginButton{ background:url(../images/LoginButton.png); width:112px; height:38px; float:right; overflow:hidden; line-height:38px; color:#FFF; text-shadow: 0 1px 0 #000; text-align:center; margin-top:-8px;}
+.loginButton:hover{ background-position:-112px 0; color:#FFF;}
+.loginTitle{ background:url(../images/title.png) no-repeat -75px 0; width:75px; height:32px; float:left; line-height:32px; color:#999; text-indent:20px;}
